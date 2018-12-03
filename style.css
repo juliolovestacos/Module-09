@@ -1,0 +1,22 @@
+  body {
+    height: 200px;
+    background: #33d330;
+    text-align:center;
+  }
+
+
+h1{
+  font-family: 'THSarabunNewRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+  font-size: 100px;
+  
+}
+
+
+.dot{ 
+    height: 20px; width: 20px;
+    border-radius: 10px; /* rounds corners */
+    background-color: white;
+    position: absolute;
+}
