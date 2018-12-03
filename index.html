@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/thsarabun-new" type="text/css"/>
+   <link rel="stylesheet" type="text/css" href="style.css">
+  <title>JS Bin</title>
+</head>
+<body>
+  <h1> Click Around the Screen! </h1>
+  <hr/>
+<button>CLEAR</button>
+<script>
+  let para = document.querySelector("p");
+  let button = document.querySelector("button");
+  para.addEventListener("mousedown", () => {
+    console.log("Handler for paragraph.");
+  });
+  button.addEventListener("mousedown", event => {
+    console.log("Handler for button.");
+    if (event.button == 2) event.stopPropagation();
+  });
+</script>
+
+   <script src="index.js"></script>   
+  
+
+</body>
+</html>
